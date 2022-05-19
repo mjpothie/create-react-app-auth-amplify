@@ -16,7 +16,7 @@ Amplify.configure({
     userPoolId: "us-east-1_Io92oXTkk",
     userPoolWebClientId: "2em0ieao2je2jou8u345b9vci5",
     oauth: {
-      domain: "https://kendrapoc.auth.us-east-1.amazoncognito.com",
+      domain: "kendrapoc.auth.us-east-1.amazoncognito.com",
       scope: ["email", "openid", "aws.cognito.signin.user.admin", "profile"],
       redirectSignIn: "http://localhost",
       redirectSignOut: "http://localhost",
@@ -34,7 +34,7 @@ Amplify.configure({
 });
 
 const federatedIdName =
-  "<name of the Identity Provider as configured in Cognito>";
+  "Auth0";
 
 function App() {
   const [token, setToken] = useState(null);
