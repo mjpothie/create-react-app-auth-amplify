@@ -18,8 +18,8 @@ Amplify.configure({
     oauth: {
       domain: "kendrapoc.auth.us-east-1.amazoncognito.com",
       scope: ["email", "openid", "aws.cognito.signin.user.admin", "profile"],
-      redirectSignIn: "http://localhost",
-      redirectSignOut: "http://localhost",
+      redirectSignIn: "https://federated-login.dby7lc1axthd.amplifyapp.com",
+      redirectSignOut: "https://federated-login.dby7lc1axthd.amplifyapp.com",
       responseType: "code"
     }
   },
